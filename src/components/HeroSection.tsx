@@ -1,9 +1,41 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import BackgroundLights from "./BackgroundLights";
 
 const HeroSection: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [currentTitle, setCurrentTitle] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const titles = [
+      "Frontend Developer",
+      "Backend Enthusiast",
+      "Full-Stack Developer specializing in AI Integrations",
+    ];
+    const currentFullText = titles[currentTitle];
+    const typingSpeed = isDeleting ? 50 : 100;
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        if (displayText.length < currentFullText.length) {
+          setDisplayText(currentFullText.slice(0, displayText.length + 1));
+        } else {
+          setTimeout(() => setIsDeleting(true), 2000);
+        }
+      } else {
+        if (displayText.length > 0) {
+          setDisplayText(currentFullText.slice(0, displayText.length - 1));
+        } else {
+          setIsDeleting(false);
+          setCurrentTitle((prev) => (prev + 1) % titles.length);
+        }
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, currentTitle]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -27,15 +59,15 @@ const HeroSection: React.FC = () => {
     const setCanvasDimensions = () => {
       const dpr = window.devicePixelRatio || 1;
       const rect = canvas.getBoundingClientRect();
-      
+
       canvasWidth = rect.width;
       canvasHeight = rect.height;
-      
+
       canvas.width = rect.width * dpr;
       canvas.height = rect.height * dpr;
-      
+
       ctx.scale(dpr, dpr);
-      
+
       initParticles();
     };
 
@@ -85,7 +117,7 @@ const HeroSection: React.FC = () => {
         if (!ctx) return;
         for (const particle of particlesToConnect) {
           const distance = Math.sqrt(
-            (this.x - particle.x) ** 2 + (this.y - particle.y) ** 2
+            (this.x - particle.x) ** 2 + (this.y - particle.y) ** 2,
           );
 
           if (distance < 200) {
@@ -105,7 +137,7 @@ const HeroSection: React.FC = () => {
     let animationFrameId: number;
     const animate = () => {
       if (!ctx || !canvas) return;
-      
+
       ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
       for (const particle of particles) {
@@ -144,16 +176,19 @@ const HeroSection: React.FC = () => {
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Hello, I'm{" "}
           <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            Kerry Zhang
+            Ming(Spike) Xu
           </span>
         </h1>
-        <h2 className="text-2xl md:text-3xl text-gray-700 mb-12 flex items-center gap-5">
-          Software Developer
+        <h2 className="text-2xl md:text-3xl text-gray-500 mb-12 flex items-center gap-5 h-12">
+          <span className="inline-block">
+            {displayText}
+            <span className="animate-pulse">|</span>
+          </span>
         </h2>
 
         <div className="flex gap-6">
           <a
-            href="https://www.linkedin.com/in/kerry-zhang-ee"
+            href="https://www.linkedin.com/in/spikexu/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-700 hover:text-blue-500 transition-colors"
@@ -161,7 +196,7 @@ const HeroSection: React.FC = () => {
             <FaLinkedin size={40} />
           </a>
           <a
-            href="https://github.com/kerryz12"
+            href="https://github.com/xevvvw-103"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-700 hover:text-blue-500 transition-colors"

@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = ["Home", "About", "Projects", "Skills"];
+  const navLinks = ["About", "Projects", "Skills"];
 
   return (
     <nav
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
       >
         <div className="flex justify-between items-center px-6 lg:px-8 py-3">
           <a href="#home" className="text-2xl font-bold text-gray-800">
-            Kerry Zhang
+            Ming(Spike) Xu
           </a>
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((item) => (
