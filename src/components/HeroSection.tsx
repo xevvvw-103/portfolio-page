@@ -11,8 +11,8 @@ const HeroSection: React.FC = () => {
   useEffect(() => {
     const titles = [
       "Frontend Developer",
-      "Backend Enthusiast",
-      "Full-Stack Developer specializing in AI Integrations",
+      "Full-Stack Developer",
+      "AI Enthusiast",
     ];
     const currentFullText = titles[currentTitle];
     const typingSpeed = isDeleting ? 50 : 100;
