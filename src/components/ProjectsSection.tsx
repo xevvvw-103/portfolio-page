@@ -1,56 +1,45 @@
 import { ProjectCard } from ".";
-import guesstheword from "../assets/guesstheword.png";
-import songoftheday from "../assets/songoftheday.png";
-import healthmonitor from "../assets/healthmonitor.png";
-import dbforum from "../assets/dbforum.png";
-import dbmanager from "../assets/dbmanager.png";
+import fieldbosstracker from "../assets/fieldbosstracker.png";
+import towerdefense from "../assets/towerdefense.png";
+import gamesetmatch from "../assets/gamesetmatch.png";
 
 const ProjectsSection: React.FC = () => {
   const projects = [
     {
-      title: "Guess the Word",
+      title: "Field Boss Tracker",
       description:
-        "A full-stack web application where users attempt to guess a mystery word by asking an AI yes or no questions.",
-      image: guesstheword,
-      alt: "Guess the Word",
-      tech: ["React", "TypeScript", "Node", "Express", "PostgreSQL"],
-      link: "https://guesstheworddaily.onrender.com/",
+        "A free open-source collaborative tool for an online game community that allows multiple users to edit and share boss spawn timers in real-time.",
+      image: fieldbosstracker,
+      alt: "Field Boss Tracker",
+      tech: ["Vue", "TypeScript", "Node", "Firebase", "Realtime Database"],
+      link: "https://xevvvw-103.github.io/tosmEventTracker/",
     },
     {
-      title: "Song of the Day",
+      title: "Tower Defense Game",
       description:
-        "A social media app allowing users to share a song they enjoy with others, once every day.",
-      image: songoftheday,
-      alt: "Song of the Day",
-      tech: ["React", "TypeScript", "Node", "Express", "PostgreSQL"],
-      link: "https://songoftheday.app",
+        "A console-based tower defense game involving a tower defending against waves of enemies. The tower can automatically fire at enemies or shoot manually.",
+      image: towerdefense,
+      alt: "Tower Defense Game",
+      tech: ["C++", "CMake"],
+      link: "https://github.com/xevvvw-103/Tower-Defense-Game",
     },
     {
-      title: "Wearable Health Monitor",
+      title: "Game Set Match",
       description:
-        "A wrist-wearable device for monitoring patient vital signs and transmitting them to a web dashboard.",
-      image: healthmonitor,
-      alt: "healthmonitor",
-      tech: ["Vue", "Python", "Flask"],
-      link: "https://github.com/kerryz12/capstone2023_JY92",
-    },
-    {
-      title: "DB Forum",
-      description:
-        "A web forum allowing students from various schools to share posts and comments with one another during COVID lockdown.",
-      image: dbforum,
-      alt: "dbforum",
-      tech: ["Next", "Java", "Spring Boot", "MongoDB"],
-      link: "https://github.com/kerryz12/nwHacks-2022",
-    },
-    {
-      title: "DB Manager",
-      description:
-        "An application enabling students to track, organize, and prioritze their school assignments.",
-      image: dbmanager,
-      alt: "dbmanager",
-      tech: ["Java", "JavaFX"],
-      link: "https://github.com/kerryz12/nwHacks-2021",
+        "A full-stack SaaS platform to streamline the process of tournament organization and optimize schedules in order to maximize employee engagement in company wide social events.",
+      image: gamesetmatch,
+      alt: "Game Set Match",
+      tech: [
+        "React",
+        "JavaScript",
+        "Jave",
+        "SpringBoot",
+        "Firebase",
+        "OAuth",
+        "MySQL",
+        "Cron Job",
+      ],
+      link: "https://docs.google.com/document/d/1gPb981baGnvIKa6T4EY-_Ztgl-L1-r41KC1hpq1pUcg/edit?usp=sharing",
     },
   ];
 
@@ -62,8 +51,7 @@ const ProjectsSection: React.FC = () => {
             My Projects
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            Here are some of my recent projects that showcase my skills and
-            expertise.
+            Here are some of my academic and personal projects.
           </p>
           <div className="mt-8 w-20 h-1 bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 rounded-full mx-auto"></div>
         </div>

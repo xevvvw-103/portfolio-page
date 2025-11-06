@@ -11,7 +11,7 @@ BSc. Computer Science
 
 WORK EXPERIENCE:
 Androvega Software Ltd. | 2025/05 - Present
-Frontend Developer | Vancouver, BC
+Software Developer | Vancouver, BC
 
 Learnwise Solutions Inc.| 2024/07 - 2024/12
 Software System Administrator | Vancouver, BC
@@ -96,9 +96,9 @@ Software Developer Co-op | Vancouver, BC`;
               </p>
 
               <p className="text-lg leading-relaxed">
-                Beyond coding, I stay active at the gym, enjoy cinema experiences
-                of all genres, and voluntarily contribute to online gaming
-                communities through open-source development.
+                Beyond coding, I stay active at the gym, enjoy cinema
+                experiences of all genres, and voluntarily contribute to online
+                gaming communities through open-source development.
               </p>
 
               <div className="mt-8 w-20 h-1 bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 rounded-full"></div>

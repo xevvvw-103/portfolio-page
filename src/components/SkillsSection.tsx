@@ -9,7 +9,14 @@ const SkillsSection: React.FC = () => {
       iconClass: "bg-blue-100 text-blue-400",
       description:
         "I'm experienced with a variety of programming languages, each one suited to different applications.",
-      skills: ["C/C++", "Java", "TypeScript", "Python", "HTML/CSS", "SQL"],
+      skills: [
+        "C/C++",
+        "Java",
+        "JavaScript/TypeScript",
+        "Python",
+        "HTML/CSS",
+        "SQL",
+      ],
     },
     {
       title: "Frameworks & Libraries",
@@ -19,11 +26,10 @@ const SkillsSection: React.FC = () => {
         "I utilize modern frameworks and libraries to create responsive interfaces and reliable backend services.",
       skills: [
         "React",
-        "Next.js",
         "Node.js",
-        "Express.js",
         "Vue.js",
         "Tailwind CSS",
+        "Spring/SpringBoot",
       ],
     },
     {
