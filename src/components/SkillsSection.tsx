@@ -1,10 +1,10 @@
 import React from "react";
-import { Code, Layout, Terminal } from "lucide-react";
+import { Code, Layout, Terminal, Speech } from "lucide-react";
 
 const SkillsSection: React.FC = () => {
   const skillCategories = [
     {
-      title: "Languages",
+      title: "Programming Languages",
       icon: <Code size={24} />,
       iconClass: "bg-blue-100 text-blue-400",
       description:
@@ -45,6 +45,18 @@ const SkillsSection: React.FC = () => {
         "CI/CD (Travis)",
         "Agile/Scrum",
         "Linux",
+      ],
+    },
+    {
+      title: "Languages",
+      icon: <Speech size={24} />,
+      iconClass: "bg-green-100 text-green-400",
+      description:
+        "I speak different languages to communicate smoothly in a team environment.",
+      skills: [
+        "English - Fluent in speaking and writing.",
+        "Chinese - Naive in speaking and writing.",
+        "French - Beginner level.",
       ],
     },
   ];

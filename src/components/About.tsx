@@ -89,7 +89,10 @@ Software Developer Co-op | Vancouver, BC`;
                 >
                   pizzagarden.ca
                 </a>
-                , handling over 500K+ visits weekly. Throughout my academic and
+                , handling over 500K+ visits weekly. I've built and restructured
+                enterprise platforms for operations management and sales
+                analytics, streamlining business operations and supporting
+                data-driven decision-making. Throughout my academic and
                 professional journey, I've built diverse projects leveraging a
                 wide range of technologies, allowing me to transform complex
                 problems into elegant, real-world solutions.
