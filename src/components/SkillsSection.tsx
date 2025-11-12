@@ -43,6 +43,7 @@ const SkillsSection: React.FC = () => {
         "Git",
         "Docker",
         "REST APIs",
+        "Postman",
         "CI/CD (Travis)",
         "Agile/Scrum",
         "Linux",
