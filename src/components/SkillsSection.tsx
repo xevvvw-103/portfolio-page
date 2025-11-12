@@ -10,11 +10,12 @@ const SkillsSection: React.FC = () => {
       description:
         "I'm experienced with a variety of programming languages, each one suited to different applications.",
       skills: [
-        "C/C++",
-        "Java",
         "JavaScript/TypeScript",
-        "Python",
+        "Java",
         "HTML/CSS",
+        "C/C++",
+        "C#",
+        "Python",
         "SQL",
       ],
     },

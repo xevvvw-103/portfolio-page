@@ -2,6 +2,7 @@ import { ProjectCard } from ".";
 import fieldbosstracker from "../assets/fieldbosstracker.png";
 import towerdefense from "../assets/towerdefense.png";
 import gamesetmatch from "../assets/gamesetmatch.png";
+import dsl from "../assets/dsl.png";
 
 const ProjectsSection: React.FC = () => {
   const projects = [
@@ -24,6 +25,19 @@ const ProjectsSection: React.FC = () => {
       link: "https://github.com/xevvvw-103/Tower-Defense-Game",
     },
     {
+      title: "DSL-A-Language-For-Building-Architecture-Blueprint",
+      description:
+        "A domain-specific language for architectural blueprint design that simplifies coding for non-programmers through intuitive syntax and real-time visual feedback.",
+      image: dsl,
+      alt: "Game Set Match",
+      tech: [
+        "Svelte",
+        "JavaScript",
+        "ANTLR"
+      ],
+      link: "https://github.com/xevvvw-103/DSL-A-Language-For-Building-Architecture-Blueprint",
+    },
+    {
       title: "Game Set Match",
       description:
         "A full-stack SaaS platform to streamline the process of tournament organization and optimize schedules in order to maximize employee engagement in company wide social events.",
@@ -32,7 +46,7 @@ const ProjectsSection: React.FC = () => {
       tech: [
         "React",
         "JavaScript",
-        "Jave",
+        "Java",
         "SpringBoot",
         "Firebase",
         "OAuth",
