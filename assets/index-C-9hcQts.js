@@ -53,7 +53,7 @@ University of British Columbia | 2019/09 - 2024/05
 BSc. Computer Science
 
 WORK EXPERIENCE:
-Androvega Software Ltd. | 2025/05 - Present
+Androvega Software Ltd. | 2025/03 - Present
 Software Developer | Vancouver, BC
 
 Learnwise Solutions Inc.| 2024/07 - 2024/12
